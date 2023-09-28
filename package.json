@@ -5,7 +5,7 @@
     "/assets",
     "index.js"
   ],
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Tom Actual theme for JSON Resume",
   "author": "Tom Grushka / forked from David Carvajal",
   "repository": {
