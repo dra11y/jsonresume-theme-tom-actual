@@ -3,7 +3,7 @@ html(lang="en")
   head
     meta(charset="utf-8")
     style
-      include ../public/styles.css
+      include styles.css
     title=`Resume ${resume.basics.name} – ${resume.basics.label}`
   body
     div(class='content')
@@ -11,15 +11,15 @@ html(lang="en")
       div(class='table padding-top-container-2')
         div(class='main')
           include pug/work
-          include pug/publications
           include pug/projects
+          include pug/publications
           include pug/volunteer
-          include pug/references
         div(class='side')
           include pug/skills
           include pug/education
           include pug/certificates
           include pug/awards
+          include pug/references
           include pug/languages
           include pug/interests
           include pug/links

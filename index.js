@@ -8,7 +8,7 @@ const render = (resume) => pug.renderFile(path.join(__dirname, 'assets', 'templa
 })
 
 const pdfRenderOptions = {
-  mediaType : 'print'
+  mediaType: 'print'
 }
 
 module.exports = {

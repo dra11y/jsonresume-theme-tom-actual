@@ -1,13 +1,18 @@
 .basics {
 
+  .summary {
+    font-size: $font-size-large;
+  }
+
   .main {
-    vertical-align: middle;
+    vertical-align: top;
 
     .name {
-      font-size: $header-name-font-size;
+      font-size: $header-name-font-size !important;
       line-height: 1em;
-      font-weight: bold;
+      font-weight: 600;
       display: block;
+      margin-top: $header-name-font-size*0.6;
       margin-left: -$header-name-font-size*0.07;
     }
 
@@ -16,6 +21,7 @@
       line-height: 1em;
       font-weight: lighter;
       display: block;
+      margin-top: 1em;
       margin-left: -$header-line-font-size*0.04;
     }
   }

@@ -1,5 +1,5 @@
 {
-  "name": "jsonresume-theme-actual",
+  "name": "jsonresume-theme-tom-actual",
   "main": "index.js",
   "files": [
     "/assets",
@@ -10,7 +10,7 @@
   "author": "David Carvajal",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davcd/jsonresume-theme-actual"
+    "url": "https://github.com/dra11y/jsonresume-theme-tom-actual"
   },
   "scripts": {
     "create-html": "resume export public/resume.html --format html --theme .",
@@ -25,7 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "iso-3166-1": "^2.1.1",
-    "markdown-it": "^13.0.1",
+    "markdown-it": "^13.0.2",
     "moment": "^2.29.4",
     "pug": "^3.0.2"
   },
@@ -34,8 +34,8 @@
     "gulp": "^4.0.2",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^5.1.0",
-    "html-validate": "^7.1.1",
-    "jest": "^28.1.1",
-    "sass": "^1.66.1"
+    "html-validate": "^8.4.1",
+    "jest": "^29.7.0",
+    "sass": "^1.68.0"
   }
 }

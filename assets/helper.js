@@ -50,7 +50,16 @@ const calcDateRange = (start, end) => {
   return array.join(' - ')
 }
 
-const beautifyDate = (date) => moment(date, 'YYYY-MM-DD').format('MMM YYYY')
+let beautifyDate = (dateString) => {
+  const date = moment(dateString, 'YYYY-MM-DD')
+  if (dateString.length == 4) {
+    return date.format('YYYY')
+  } else if (dateString.length == 7) {
+    return date.format('MMM YYYY')
+  } else {
+    return date.format('MMM D, YYYY')
+  }
+}
 
 const beautifyArray = (separator, array) => array.filter(x => x).join(separator)
 

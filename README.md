@@ -1,4 +1,6 @@
-# Actual theme for JSON Resume
+# Tom Actual theme for JSON Resume
+
+## Forked from actual to add accessibility, personalize, and use Conference Presentations in place of Projects.
 
 Minimalist and modern theme for [JSON Resume](https://jsonresume.org/) standard, designed for
 the [v1.0.0 version](https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json).

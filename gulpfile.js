@@ -7,21 +7,23 @@ const bs = require('browser-sync').create()
 const fs = require('fs')
 const helper = require('./assets/helper.js')
 
-function css () {
+function css() {
   return src('./assets/styles.scss')
     .pipe(sass())
-    .pipe(dest('./assets'))
+    .pipe(dest('./public'))
 }
 
-function html () {
+function html() {
   const resume = JSON.parse(fs.readFileSync('./resume.json', 'utf-8'))
+
+  // console.log('resume', resume)
 
   return src('./assets/template.pug')
     .pipe(pug({ data: { resume, helper } }))
     .pipe(dest('./public'))
 }
 
-function serve () {
+function serve() {
   bs.init({
     server: {
       baseDir: './public',
@@ -32,7 +34,9 @@ function serve () {
   })
 
   watch('./assets/**/*.scss', series(css, html))
-  watch(['./assets/**/*.pug', './resume.json'], html)
+  watch('./assets/helper.js', html)
+  const resumePath = fs.realpathSync('./resume.json')
+  watch(['./assets/**/*.pug', resumePath], html)
   bs.watch('./public/*.html').on('change', bs.reload)
 }
 
