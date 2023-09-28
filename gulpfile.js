@@ -10,7 +10,7 @@ const helper = require('./assets/helper.js')
 function css() {
   return src('./assets/styles.scss')
     .pipe(sass())
-    .pipe(dest('./public'))
+    .pipe(dest('./assets'))
 }
 
 function html() {
