@@ -6,8 +6,8 @@
     "index.js"
   ],
   "version": "0.2.2",
-  "description": "Actual theme for JSON Resume",
-  "author": "David Carvajal",
+  "description": "Tom Actual theme for JSON Resume",
+  "author": "Tom Grushka / forked from David Carvajal",
   "repository": {
     "type": "git",
     "url": "https://github.com/dra11y/jsonresume-theme-tom-actual"
